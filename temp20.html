@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mull()
+        {
+            let str=""
+            let nu=document.getElementById("num").value;
+            for(let i=1;i<=10;i++){
+                let ans=nu*i;
+               str += `${nu} * ${i} = ${ans}<br>`;
+            } 
+            root.innerHTML = str
+        }
+    </script>
+</head>
+<body>
+    
+    <p><input type="number" id="num" onchange="mull()"></p>
+   <!-- <button onclick="mull()">submit</button>-->
+    <hr>
+    <div id="root"></div>
+</body>
+</html>
