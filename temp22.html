@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const products = ["apple","orange","mango"];
+       /* for(let i=0;i<products.length;i++){
+            console.log(products[i])
+        }*/
+
+      /* products.forEach((value,index,arr))=>{
+        console.log(value);
+       products.forEach(value=> {
+        console.log("Hello World")
+       console.log(value);
+       });*/
+
+       /*const num=[12,23,45,10]
+       const newArr=num.map(value=>{//map can be used inplace of foreach but here we cannot use foreach here becaz we are trying to copy in another new array
+        return value + 5
+       })
+         console.log(newArr) */
+
+       /* const num=[12,23,45,10]
+        const newArr = num.map((value)=>value +5);
+       console.log(newArr);*/
+
+       /*const num=[12,23,45,10]
+        const newArr = num.filter((value)=> value > 10);// filter doesnot modify the element 
+       console.log(newArr);*/ //filter just cpy the ele to another array based on a condition
+       
+      /* const num=['st01','st02','st03','st03']
+        const newArr = num.find((value)=> value=='st02');// filter doesnot modify the element 
+       console.log(newArr);  */  //find  return only 1 value
+
+       /*const num=[12,23,45,10]
+        const newArr = num.filter((value)=> value > 10);// filter doesnot modify the element 
+       console.log(newArr);*/   //more than 1 value use filter otherwise use find
+       const score=[12,23,45,10]
+        const total = score.reduce((sum,value)=> sum+value);// filter doesnot modify the element 
+       console.log(total);
+
+    </script>
+</body>
+</html>

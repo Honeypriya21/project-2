@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .c{
+            background-color: lightcyan;
+        }
+    </style>
     <script>
         function showData(){
-            let na=document.getElementById("email").value;
-            let pa=document.getElementById("pass").value;
-            data.innerHTML= `${na},${pa}`
+            //let email=document.getElementById("email").value;
+            //let email=document.querySelector("#email").value;
+           // let email=document.querySelector(".c").value;
+           //let email=document.querySelectorAll("input")
+           //let email=document.getElementsByTagName("input")
+           //console.log(email[1].value)
+           //let email=document.getElementsByClassName("c")
+           let email=document.querySelector("#email").value;
+            let password=document.querySelector("#password").value;
+            data.innerHTML= `${email},${password}`
         }
     </script>
 </head>
 <body>
     
     <h1> Log in</h1>
-    <input type="text"  id="email" placeholder="Enter the email"><br><br>
-    <input type="password"  id="pass" placeholder=" enter password"><br><br>
+    <input type="text" class="c" id="email" placeholder="Enter the email"><br><br>
+    <input type="password"  id="password" placeholder=" enter password"><br><br>
     <button onclick="showData()">log in</button>
     <div id="data"></div>
     
